@@ -46,7 +46,7 @@ export default function Intro() {
         </div>
       </div>
 
-      <motion.p 
+      <motion.h1
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -60,7 +60,7 @@ export default function Intro() {
         <span className="italic">Manipal University Jaipur</span>. 
         {" "}My focus is{" "}
         <span className="underline">React.js (Next.js)</span>.
-      </motion.p>
+      </motion.h1>
 
       <motion.div 
         className="flex flex-col sm:flex-row justify-center items-center gap-2 px-4 text-lg font-medium"
@@ -81,7 +81,7 @@ export default function Intro() {
           href="/JoyBrarCV.pdf" 
           download 
         >
-          Download DV <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
         <a href="https://linkedin.com" target="_blank" className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none border border-black/10 focus:scale-[1.15] hover:scale-[1.15] active:scale-110 hover:text-gray-950 transition">
           <BsLinkedin />
