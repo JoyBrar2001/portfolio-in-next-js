@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Projects() {
   return (
-    <section>
+    <section id="projects" className="scroll-mt-28 mb-28">
       <div className="text-center">
         <SectionHeading>My Projects</SectionHeading>
       </div>
