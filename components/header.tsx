@@ -2,13 +2,14 @@
 
 import { links } from "@/lib/data"
 import { AnimatePresence, motion, useAnimation } from "framer-motion"
-import React, { useEffect, useState } from "react"
+import React from "react"
 import Link from "next/link"
 import clsx from "clsx"
+import { useActiveSectionContext } from "@/context/active-section-context"
 
 export default function Header() {
-  const [activeSection, setActiveSection] = useState('Home');
-  const [left, setLeft] = useState(0);
+  const { activeSection, setActiveSection } = useActiveSectionContext()
+
   return (
     <header className="z-[999] relative">
       <motion.div
@@ -39,7 +40,7 @@ export default function Header() {
                     {link.name === activeSection && (
                       <motion.span
                         className="bg-gray-200 rounded-full absolute inset-0 top-1 -bottom-1 -z-10"
-                        layoutId="activea"
+                        layoutId="activeSection"
                         transition={{
                           type: "spring",
                           stiffness: 380,

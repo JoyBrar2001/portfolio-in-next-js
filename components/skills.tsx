@@ -3,6 +3,9 @@
 import { skillsData } from "@/lib/data";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
+import { useEffect } from "react";
 
 const fadeInAnimationsVariants = {
   initial: {
@@ -19,8 +22,17 @@ const fadeInAnimationsVariants = {
 }
 
 export default function Skills() {
+  const {ref, inView} = useInView();
+  const { setActiveSection } = useActiveSectionContext();
+
+  useEffect(() => { 
+    if(inView){
+      setActiveSection("Skills");
+    }
+  }, [inView, setActiveSection]);
+
   return (
-    <section id="skills" className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
+    <section ref={ref} id="skills" className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
       <SectionHeading>My Skills</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
