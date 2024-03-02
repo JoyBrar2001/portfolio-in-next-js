@@ -54,29 +54,33 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Full Stack Netflix Clone",
+    title: "Netflix Clone",
     description:
-    "Developed a high-fidelity Netflix clone with Google and Github auth, showcasing mastery in full-stack web development.",
+    "Developed a high-fidelity, full stack Netflix clone with Google and Github auth, showcasing mastery in full-stack web development.",
     tags: ["TypeScript", "Nextjs", "MongoDB", "NextAuth", "Tailwind", "Prisma" ],
+    projectUrl: "https://github.com/JoyBrar2001/Netflix-Clone-in-Nextjs",
     imageUrl: netflixclone,
   },
   {
     title: "MUJ ACM Website",
     description:
-      "Developed a highly responsive website for our college's technical club, ACM (Association for Computing Machinery), optimized for seamless user experience on mobile and tablet devices.",
+    "Developed a highly responsive website for our college's technical club, ACM (Association for Computing Machinery), optimized for seamless user experience on mobile and tablet devices.",
     tags: ["React", "Javascript", "Three Js", "Framer Motion", "Tailwind"],
+    projectUrl: "https://github.com/JoyBrar2001/MUJ-ACM-Student-Chapter_Website",
     imageUrl: mujacmwebsite,
   },
   {
     title: "Modern Bank UI",
     description: "The project showcases a modern, responsive, and visually compelling website, emphasizing my proficiency in frontend technologies.",
     tags: ["React", "Javascript", "UI/UX", "Tailwind", "Framer"],
+    projectUrl: "https://github.com/JoyBrar2001/Modern-Bank-UI",
     imageUrl: bankui,
   },
   {
-    title: "Native Movies App",
+    title: "Native Recipe App",
     description: "Designed and developed a dynamic food recipe app in React Native, seamlessly integrating animations and leveraging TheMealDB API for a diverse culinary experience.",
     tags: ["React Native", "Javascript", "UI/UX", "Tailwind", "Axios"],
+    projectUrl: "https://github.com/JoyBrar2001/Food-Recipe-App-in-Native",
     imageUrl: foodrecipeapp,
   },
 ] as const;

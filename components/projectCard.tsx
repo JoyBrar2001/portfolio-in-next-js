@@ -5,10 +5,12 @@ import SectionHeading from "./section-heading";
 import React, { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
+import { CgArrowTopRight } from "react-icons/cg";
 
 type ProjectCardProps = (typeof projectsData)[number]
 
-export default function ProjectCard({ title, description, tags, imageUrl }: ProjectCardProps) {
+export default function ProjectCard({ title, description, tags, projectUrl, imageUrl }: ProjectCardProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -28,7 +30,16 @@ export default function ProjectCard({ title, description, tags, imageUrl }: Proj
     >
       <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-xl overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-8 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:w-1/2 flex flex-col gap-2 h-full group-even:ml-auto">
-          <h3 className="text-2xl font-semibold">{title}</h3>
+          <Link 
+            href={projectUrl}
+            target="_blank"
+            className="flex flex-row justify-start items-center gap-1"
+          >
+            <h3 className="text-2xl font-semibold underline">{title}</h3>
+            <div className="text-2xl">
+            <CgArrowTopRight />
+            </div>
+          </Link>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">{description}</p>
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
