@@ -4,9 +4,9 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
 import mujacmwebsite from "@/public/MUJACMWebsite.png";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import netflixclone from "@/public/NetflixClone.png";
+import bankui from "@/public/BankUI.png";
+import foodrecipeapp from "@/public/FoodRecipeApp.png";
 
 export const links = [
   {
@@ -37,52 +37,47 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+    title: "Software Engineering Intern",
+    location: "Clarient Systems Corporation",
+    description: "Worked on Node.js Express API application designed to facilitate the management of data for an online test application through APIs. Technologies Used - Next.js 13.4, JavaScript, TypeScript, NoSQL (MongoDB), and Node.js with Express.js.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "05/2023 – 08/2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+    title: "Web Master",
+    location: "Association for Computing Machinery (MUJ ACM)",
+    description: "Led all teams of web based operations which included the developement of new websites and mainatance of existing sites. Also Served as Head of Design which included designing of websites , posters and social media handling as well.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2023 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
+    title: "Full Stack Netflix Clone",
+    description:
+    "Developed a high-fidelity Netflix clone with Google and Github auth, showcasing mastery in full-stack web development.",
+    tags: ["TypeScript", "Nextjs", "MongoDB", "NextAuth", "Tailwind", "Prisma" ],
+    imageUrl: netflixclone,
+  },
+  {
     title: "MUJ ACM Website",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "Developed a highly responsive website for our college's technical club, ACM (Association for Computing Machinery), optimized for seamless user experience on mobile and tablet devices.",
+    tags: ["React", "Javascript", "Three Js", "Framer Motion", "Tailwind"],
     imageUrl: mujacmwebsite,
   },
   {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    title: "Modern Bank UI",
+    description: "The project showcases a modern, responsive, and visually compelling website, emphasizing my proficiency in frontend technologies.",
+    tags: ["React", "Javascript", "UI/UX", "Tailwind", "Framer"],
+    imageUrl: bankui,
   },
   {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    title: "Native Movies App",
+    description: "Designed and developed a dynamic food recipe app in React Native, seamlessly integrating animations and leveraging TheMealDB API for a diverse culinary experience.",
+    tags: ["React Native", "Javascript", "UI/UX", "Tailwind", "Axios"],
+    imageUrl: foodrecipeapp,
   },
 ] as const;
 
@@ -91,19 +86,21 @@ export const skillsData = [
   "CSS",
   "JavaScript",
   "TypeScript",
+  "C++",
+  "Python",
+  "DSA",
   "React",
   "Next.js",
   "Node.js",
   "Git",
+  "Github",
   "Tailwind",
+  "Framer Motion",
   "Prisma",
+  "MySQL",
   "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "Express.js",
+  "React Native",
+  "Expo",
 ] as const;
