@@ -36,6 +36,9 @@ export default function Skills() {
             viewport={{
               once: true,
             }}
+            whileHover={{
+              scale: 1.15,
+            }}
             custom={index}
           >
             {skill}

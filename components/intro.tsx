@@ -7,6 +7,7 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
+import { SiCodewars, SiLeetcode } from "react-icons/si";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home");
@@ -86,11 +87,17 @@ export default function Intro() {
         >
           Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
-        <a href="https://linkedin.com" target="_blank" className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none border border-black/10 focus:scale-[1.15] hover:scale-[1.15] active:scale-110 hover:text-gray-950 transition dark:bg-white/10 dark:text-white/60">
+        <a href="https://www.linkedin.com/in/joy-brar-36a440226/" target="_blank" className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none border border-black/10 focus:scale-[1.15] hover:scale-[1.15] active:scale-110 hover:text-gray-950 transition dark:bg-white/10 dark:text-white/60">
           <BsLinkedin />
         </a>
-        <a href="https://github.com" target="_blank" className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none border border-black/10 focus:scale-[1.15] hover:scale-[1.15] active:scale-110 hover:text-gray-950 transition dark:bg-white/10 dark:text-white/60">
+        <a href="https://github.com/JoyBrar2001" target="_blank" className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none border border-black/10 focus:scale-[1.15] hover:scale-[1.15] active:scale-110 hover:text-gray-950 transition dark:bg-white/10 dark:text-white/60">
           <FaGithubSquare />
+        </a>
+        <a href="https://leetcode.com/JoyBrar2003/" target="_blank" className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none border border-black/10 focus:scale-[1.15] hover:scale-[1.15] active:scale-110 hover:text-gray-950 transition dark:bg-white/10 dark:text-white/60">
+          <SiLeetcode />
+        </a>
+        <a href="https://www.codewars.com/users/JoyBrar2003" target="_blank" className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none border border-black/10 focus:scale-[1.15] hover:scale-[1.15] active:scale-110 hover:text-gray-950 transition dark:bg-white/10 dark:text-white/60">
+          <SiCodewars />
         </a>
       </motion.div>
     </section>
