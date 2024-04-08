@@ -7,6 +7,7 @@ import mujacmwebsite from "@/public/MUJACMWebsite.png";
 import netflixclone from "@/public/NetflixClone.png";
 import bankui from "@/public/BankUI.png";
 import foodrecipeapp from "@/public/FoodRecipeApp.png";
+import iphonelandingpage from "@/public/iPhoneLandingPage.png";
 
 export const links = [
   {
@@ -70,11 +71,11 @@ export const projectsData = [
     imageUrl: mujacmwebsite,
   },
   {
-    title: "Modern Bank UI",
-    description: "The project showcases a modern, responsive, and visually compelling website, emphasizing my proficiency in frontend technologies.",
-    tags: ["React", "Javascript", "UI/UX", "Tailwind", "Framer"],
-    projectUrl: "https://github.com/JoyBrar2001/Modern-Bank-UI",
-    imageUrl: bankui,
+    title: "iPhone Landing Page",
+    description: "Demonstrated expertise in front-end development by delivering a visually stunning and responsive iPhone 15 website optimized for various devices.",
+    tags: ["React", "Javascript", "UI/UX", "Tailwind", "gsap", "Three.js"],
+    projectUrl: "https://github.com/JoyBrar2001/Apple-3D-Homepage",
+    imageUrl: iphonelandingpage,
   },
   {
     title: "Native Recipe App",
