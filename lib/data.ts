@@ -55,12 +55,11 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Netflix Clone",
-    description:
-    "Developed a high-fidelity, full stack Netflix clone with Google and Github auth, showcasing mastery in full-stack web development.",
-    tags: ["TypeScript", "Nextjs", "MongoDB", "NextAuth", "Tailwind", "Prisma" ],
-    projectUrl: "https://github.com/JoyBrar2001/Netflix-Clone-in-Nextjs",
-    imageUrl: netflixclone,
+    title: "iPhone Landing Page",
+    description: "Demonstrated expertise in front-end development by delivering a visually stunning and responsive iPhone 15 website optimized for various devices.",
+    tags: ["React", "Javascript", "UI/UX", "Tailwind", "gsap", "Three.js"],
+    projectUrl: "https://github.com/JoyBrar2001/Apple-3D-Homepage",
+    imageUrl: iphonelandingpage,
   },
   {
     title: "MUJ ACM Website",
@@ -71,11 +70,12 @@ export const projectsData = [
     imageUrl: mujacmwebsite,
   },
   {
-    title: "iPhone Landing Page",
-    description: "Demonstrated expertise in front-end development by delivering a visually stunning and responsive iPhone 15 website optimized for various devices.",
-    tags: ["React", "Javascript", "UI/UX", "Tailwind", "gsap", "Three.js"],
-    projectUrl: "https://github.com/JoyBrar2001/Apple-3D-Homepage",
-    imageUrl: iphonelandingpage,
+    title: "Netflix Clone",
+    description:
+    "Developed a high-fidelity, full stack Netflix clone with Google and Github auth, showcasing mastery in full-stack web development.",
+    tags: ["TypeScript", "Nextjs", "MongoDB", "NextAuth", "Tailwind", "Prisma" ],
+    projectUrl: "https://github.com/JoyBrar2001/Netflix-Clone-in-Nextjs",
+    imageUrl: netflixclone,
   },
   {
     title: "Native Recipe App",
