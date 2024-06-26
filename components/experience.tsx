@@ -58,12 +58,13 @@ const ExperienceCard = ({ date, icon, title, location, description, index } : { 
           padding: "1.3rem 2rem",
         }}
         contentArrowStyle={{
-          borderRight: theme === "light" ? "0.4rem solid #9ca3af" : "0.4rem solid rgba(255, 255, 255, 0.5)",
+          borderRight: theme === "light" ? "0.4rem solid #9ca3af" : "0.4rem solid rgba(255, 255, 255, 0.05)",
+          margin: 1,
         }}
         date={date}
         icon={icon}
         iconStyle={{
-          background: theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
+          background: theme === "light" ? "white" : "rgba(17, 24, 39)",
           fontSize: "1.5rem",
         }}
       >
