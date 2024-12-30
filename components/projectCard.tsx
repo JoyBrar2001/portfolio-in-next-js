@@ -10,7 +10,7 @@ import { CgArrowTopRight } from "react-icons/cg";
 
 type ProjectCardProps = (typeof projectsData)[number]
 
-export default function ProjectCard({ title, description, tags, projectUrl, imageUrl }: ProjectCardProps) {
+export default function ProjectCard({ title, description, tags, projectUrl, imageUrl, index }: ProjectCardProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -25,10 +25,11 @@ export default function ProjectCard({ title, description, tags, projectUrl, imag
       style={{
         scale: scaleProgress,
         opacity: opacityProgress,
+        top: `${100 + index*40}px`,
       }}
-      className="mb-3 sm:mb-8 last:mb-0 group"
+      className="mb-3 sm:mb-8 group sticky"
     >
-      <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-xl overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition dark:bg-white/10 dark:hover:bg-white/20">
+      <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-xl overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition dark:bg-white/10 dark:hover:bg-white/20 backdrop-blur-2xl">
         <div className="pt-4 pb-8 px-4 sm:pl-10 sm:px-0 sm:pt-10 sm:w-1/2 flex flex-col gap-2 h-full group-even:ml-auto">
           <Link 
             href={projectUrl}
