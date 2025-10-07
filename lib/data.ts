@@ -1,8 +1,10 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
+import { MdOutlineDesignServices } from "react-icons/md";
 import { LuGraduationCap } from "react-icons/lu";
 import { RiComputerLine } from "react-icons/ri";
+import { GrOracle } from "react-icons/gr";
 
 import mujacmwebsite from "@/public/MUJACMWebsite.png";
 import netflixclone from "@/public/NetflixClone.png";
@@ -40,6 +42,20 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+  {
+    title: "Associate Engineer",
+    location: "Oracle",
+    description: "Working as an Associate Engineer focusing on developing and maintaining scalable frontend and backend applications. Collaborating with cross-functional teams to enhance enterprise-grade software solutions, optimize performance, and ensure seamless user experiences using modern technologies and best engineering practices.",
+    icon: React.createElement(GrOracle),
+    date: "05/2025 - Present",
+  },
+  {
+    title: "Frontend Developer",
+    location: "Millipixels Interactive LLP",
+    description: "Developed responsive, visually appealing web interfaces using React.js, Next.js, and Tailwind CSS. Collaborated closely with designers and backend engineers to deliver optimized, production-ready features for clients across diverse domains. Focused on code scalability, UI/UX consistency, and performance enhancements.",
+    icon: React.createElement(MdOutlineDesignServices),
+    date: "01/2025 - 05/2026",
+  },
   {
     title: "Frontend Developer",
     location: "Smollan India",
